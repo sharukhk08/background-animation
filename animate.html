@@ -1,0 +1,2113 @@
+<html lang="en">
+
+<head>
+    <style>
+        .jquery-ripples {
+            position: relative;
+            z-index: 0;
+        }
+    </style>
+    <style>
+        .jquery-ripples {
+            position: relative;
+            z-index: 0;
+        }
+
+        body {
+            background-color: black !important;
+        }
+    </style>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <link rel="icon" type="image/png" href="images/1.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./animate.js"></script>
+
+    <style>
+        .home::after {
+
+            content: "" !important;
+
+            width: 0 !important;
+
+            height: 3px !important;
+
+            background-color: #25d06f;
+
+            position: absolute !important;
+
+            top: 0 !important;
+
+            left: 0 !important;
+
+            -webkit-transition: .5s !important;
+
+            transition: .5s !important;
+
+        }
+
+
+
+        .home::before {
+
+            content: "" !important;
+
+            width: 0 !important;
+
+            height: 3px !important;
+
+            background-color: #25d06f;
+
+            position: absolute !important;
+
+            bottom: 0 !important;
+
+            right: 0 !important;
+
+            -webkit-transition: .5s !important;
+
+            transition: .5s !important;
+
+        }
+
+
+
+        .home::after {
+
+            width: 100% !important;
+
+        }
+
+
+
+        .home::before {
+
+            width: 100% !important;
+
+        }
+
+
+
+        .home {
+
+            color: #5480D0 !important;
+
+        }
+    </style>
+
+
+
+    <style type="text/css">
+        @font-face {
+            font-family: Roboto;
+            src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+        }
+    </style>
+</head>
+
+<body onmousemove="if(!window.__cfRLUnblockHandlers) return false; color_hover(event)" data-aos-easing="ease"
+    data-aos-duration="400" data-aos-delay="0">
+    <div>
+
+
+
+
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+        <meta name="csrf-token" content="3uDQjiLg17Xj2mkjligCCSyzxLBWScMB2HNA7gkB">
+
+        <title> The Billionaire Bunker</title>
+
+
+
+        <link rel="shortcut icon" href="assets/logo_white.png" type="image/x-icon">
+
+
+
+
+        <link rel="stylesheet" href="assets/front/css/bootstrap.min.css" media="all">
+
+
+
+        <link rel="stylesheet" href="assets/front/css/plugin.min.css" media="all">
+
+        <link rel="stylesheet" href="cdn.jsdelivr.net/npm/sweetalert2%4010.10.1/dist/sweetalert2.min.css" media="all">
+
+        <link rel="stylesheet" href="assets/front/css/stylee.css" media="all">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="assets/front/css/responsive.css">
+
+
+
+        <link href="assets/front/css/base-color37af37af.css?color=5480D0&amp;color1=0A3041" rel="stylesheet"
+            media="all">
+
+
+
+        <!-- <script src="assets/front/js/jquery-3.3.1.min.js" type="47e422a8f75a9fcabcf17f5e-text/javascript"></script> -->
+
+
+
+        <script src="code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+
+        <script type="text/javascript">
+            window.ga = window.ga || function () {
+                (ga.q = ga.q || []).push(arguments)
+            };
+            ga.l = +new Date;
+
+            ga('create', 'UA-105392568-1', 'auto');
+
+            ga('send', 'pageview');
+        </script>
+
+        <!-- counter -->
+
+        <script>
+            var counted = 0;
+
+            $(window).scroll(function () {
+
+
+
+                var oTop = $('#counter').offset().top - window.innerHeight;
+
+                if (counted == 0 && $(window).scrollTop() > oTop) {
+
+                    $('.count').each(function () {
+
+                        var $this = $(this),
+
+                            countTo = $this.attr('data-count');
+
+                        $({
+
+                            countNum: $this.text()
+
+                        }).animate({
+
+                                countNum: countTo
+
+                            },
+
+
+
+                            {
+
+
+
+                                duration: 2000,
+
+                                easing: 'swing',
+
+                                step: function () {
+
+                                    $this.text(Math.floor(this.countNum));
+
+                                },
+
+                                complete: function () {
+
+                                    $this.text(this.countNum);
+
+                                    //alert('finished');
+
+                                }
+
+
+
+                            });
+
+                    });
+
+                    counted = 1;
+
+                }
+
+
+
+            });
+        </script>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+        crossorigin="anonymous"></script>
+
+
+
+    <script>
+        $(window).load(function () {
+            $('.loader').fadeOut(1000);
+            $('.back').fadeOut(1000);
+
+        });
+    </script>
+
+    <div class="back" style="display: none;">
+        <div class="loader" style="display: none;">Opening Bunker</div>
+    </div>
+
+
+
+
+
+    <div>
+        <!-- When there is no desire, all things are at peace. - Laozi -->
+        <canvas class="banner_canvas" id="canvas_banner" style="" width="869" height="973"></canvas>
+
+
+    </div>
+
+    <div>
+        <!-- Act only according to that maxim whereby you can, at the same time, will that it should become a universal law. - Immanuel Kant -->
+
+
+        <div class="header-area header-absolute">
+
+            <div class="container">
+
+                <div class="header-navbar">
+
+                    <div class="row">
+
+                        <div class="col-lg-2 col-6">
+
+
+
+                        </div>
+
+                        <div class="col-lg-10 col-6 text-right position-static">
+
+                            <ul class="main-menu" id="mainMenu">
+
+                                <li class=""><a class="home" href="#">Home</a></li>
+
+                                <li class=""><a class="portfolio" href="#about">About</a></li>
+
+                                <li class=""><a class="services" href="#utility">Utility</a></li>
+
+                                <li class=""><a class="teams" href="#story">Our Story</a></li>
+
+                                <li class=""><a class="about" href="#roadmap">RoadMap</a></li>
+
+                                <li class=""><a class="faq" href="#team">Team</a></li>
+
+                                <li class=""><a class="career" href="#faq">FAQ</a></li>
+
+
+
+
+
+                                <li><a href="https://discord.gg/eFE3aEG8V4" class="boxed-btn">Join Our Discord</a></li>
+
+                            </ul>
+
+                            <div id="mobileMenu">
+                                <div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0"
+                                        class="slicknav_btn slicknav_collapsed" style="outline: none;"><span
+                                            class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span
+                                                class="slicknav_icon-bar"></span><span
+                                                class="slicknav_icon-bar"></span><span
+                                                class="slicknav_icon-bar"></span></span></a>
+                                    <ul class="slicknav_nav slicknav_hidden" style="display: none;" role="menu"
+                                        aria-hidden="true">
+
+                                        <li class=""><a class="home" href="#" role="menuitem" tabindex="-1">Home</a>
+                                        </li>
+
+                                        <li class=""><a class="portfolio" href="#about" role="menuitem"
+                                                tabindex="-1">About</a></li>
+
+                                        <li class=""><a class="services" href="#utility" role="menuitem"
+                                                tabindex="-1">Utility</a></li>
+
+                                        <li class=""><a class="teams" href="#story" role="menuitem" tabindex="-1">Our
+                                                Story</a></li>
+
+                                        <li class=""><a class="about" href="#roadmap" role="menuitem"
+                                                tabindex="-1">RoadMap</a></li>
+
+                                        <li class=""><a class="faq" href="#team" role="menuitem" tabindex="-1">Team</a>
+                                        </li>
+
+                                        <li class=""><a class="career" href="#faq" role="menuitem" tabindex="-1">FAQ</a>
+                                        </li>
+
+
+
+
+
+                                        <li><a href="https://discord.gg/eFE3aEG8V4" class="boxed-btn" role="menuitem"
+                                                tabindex="-1">Join Our Discord</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-md-5 col-sm-5 col-lg-5">
+                <section style="color: white">
+                    <h1 style=" font-size: 36px; font-family:headingfont;">Welcome to The Billionaire Bunker</h1>
+                    <br><br><br>
+
+
+                    <p
+                        style="  line-height: 30px; font-weight: 400; border: none; text-decoration: none; font-size: 16px; font-family:bodyfont;">
+                        Welcome to the Billionaire Bunker, the leader in NFT investing and trading. Created by
+                        billionaire cats who used the system to beat the system. The Billionaire Bunker Offers An
+                        Exclusive All-In-One Package For NFT Investors With Ultra-high Utility. This is the place where
+                        the world’s top NFT and Crypto players come to learn secrets and enrich themselves with the
+                        latest tech and opportunities.
+                    </p><br><br id="content-desktop"><br id="content-desktop">
+
+
+
+                    <a href="https://discord.gg/eFE3aEG8V4" class="hero-boxed-btn" target="_blank"
+                        style="font-family:headingfont;">Join Public Sale</a>
+
+
+                </section>
+
+            </div>
+
+            <div class="col-md-5 col-sm-5 col-lg-5">
+                <section>
+                    <img class="" width="100%" height="100%" src="images/First image top section.png" alt="img">
+
+                </section>
+
+            </div>
+            <div class="col-md-1 col-lg-1"></div>
+        </div>
+    </div>
+
+    <br>
+
+
+
+
+    <div class="row mx-0">
+
+        <button type="button" class="text-white mx-auto rounded-circle btn my-3"
+            onclick="if (!window.__cfRLUnblockHandlers) return false; multipleSplats(8)" style="border: 1px solid #fff; width: 60px; height: 60px; font-size: 12px; background-color:
+
+        black; z-index: 1;" data-cf-modified-aae3f648cc13b823acc6af5d-="">
+
+            BOOM
+
+        </button>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-md-10 col-sm-6 col-lg-10">
+                <section>
+                    <img src="images/Illustration_new_02-_1_-_1_.webp" width="100% " class="banner_style">
+
+                    <br id="content-desktop">
+                    <br id="content-desktop">
+                    <br id="content-desktop">
+                    <center><a href="https://discord.gg/eFE3aEG8V4" class="hero-boxed-btn" target="_blank"
+                            style="font-family:headingfont;">Join Public Sale</a></center>
+
+                </section>
+
+            </div>
+            <div class="col-md-1 col-lg-1"></div>
+        </div>
+    </div>
+
+
+
+
+    <br id="content-mobile">
+    <br id="content-mobile">
+
+
+    <div class="container " id="content-mobile">
+        <div class="row">
+            <div class="col-md-2 col-lg-2 col-sm-2"></div>
+            <div class="col-md-8 col-lg-8 col-sm-8">
+                <center>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                            <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+                            <li data-target="#myCarousel" data-slide-to="4" class=""></li>
+
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <img src="images/Picture/N2.jpg" alt="Los Angeles">
+                            </div>
+
+                            <div class="item active">
+                                <img src="images/Picture/N1.jpg" alt="Chicago">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/Picture/1.3.jpg" alt="New York">
+                            </div>
+                            <div class="item">
+                                <img src="images/Picture/1.2.jpg" alt="New York">
+                            </div>
+                            <div class="item">
+                                <img src="images/Picture/1.5.jpg" alt="New York">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </center>
+
+
+            </div>
+            <div class="col-md-2 col-lg-2 col-sm-2"></div>
+
+        </div>
+    </div>
+
+    <div class="team-section section-padding" id="content-desktop">
+
+
+
+        <div class="team-content">
+
+            <div class="container">
+
+
+
+                <div class="row">
+
+                    <div class="team-carousel common-carousel owl-carousel owl-theme owl-loaded owl-drag">
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                style="transform: translate3d(-1875px, 0px, 0px); transition: all 0s ease 0s; width: 4125px;">
+                                <div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member">
+
+                                        <div class="team-img-wrapper">
+
+                                            <img class="img-fluid lazy rol" src="images/Picture/1.3.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member">
+
+                                        <div class="team-img-wrapper">
+                                            <img class="img-fluid lazy rol" src="images/Picture/N1.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member" id="about">
+
+                                        <div class="team-img-wrapper">
+                                            <img class="img-fluid lazy rol" src="images/Picture/1.5.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member">
+
+                                        <div class="team-img-wrapper">
+
+                                            <img class="img-fluid lazy rol" src="images/Picture/N2.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member">
+
+                                        <div class="team-img-wrapper">
+
+                                            <img class="img-fluid lazy rol" src="images/Picture/1.2.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member">
+
+                                        <div class="team-img-wrapper">
+
+                                            <img class="img-fluid lazy rol" src="images/Picture/1.3.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member">
+
+                                        <div class="team-img-wrapper">
+                                            <img class="img-fluid lazy rol" src="images/Picture/N1.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member" id="about">
+
+                                        <div class="team-img-wrapper">
+                                            <img class="img-fluid lazy rol" src="images/Picture/1.5.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member">
+
+                                        <div class="team-img-wrapper">
+
+                                            <img class="img-fluid lazy rol" src="images/Picture/N2.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member">
+
+                                        <div class="team-img-wrapper">
+
+                                            <img class="img-fluid lazy rol" src="images/Picture/1.2.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 345px; margin-right: 30px;">
+                                    <div class="single-team-member">
+
+                                        <div class="team-img-wrapper">
+
+                                            <img class="img-fluid lazy rol" src="images/Picture/1.3.jpg" alt="NFT Photo"
+                                                style="width:100%;">
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i
+                                    class="flaticon-left-arrow"></i></button><button type="button" role="presentation"
+                                class="owl-next"><i class="flaticon-right-arrow"></i></button></div>
+                        <div class="owl-dots disabled"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="team-overlay"></div>
+
+    </div>
+    <br id="content-mobile">
+    <br id="content-mobile">
+
+    <div class="container intro-section text-white">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+
+
+                <h3 style="font-family:headingfont;text-align:center;">For The First Time in History...</h3><br>
+
+                <p
+                    style=" text-align: center; line-height: 30px; font-weight: 400; border: none; text-decoration: none; font-size: 20px;font-family:bodyfont; color:white">
+                    <b>The general population will have access to the tools once only available to the top 1%.</b> The
+                    Billionaire Bunker will give the ability to its members to find the best investments before anyone
+                    else by offering exclusive trading tools unavailable to the public. The Billionaire Bunker will give
+                    20% royalties for every dollar generated with the tool to its member who hold a big cat for 6
+                    months. The bunker also comes with a course on how to trade NFTs like Wall Street, with knowledge
+                    unavailable on the internet and a top-rated community filled with the best investors.
+
+                </p> <br>
+                <center><a href="https://discord.gg/eFE3aEG8V4" class="hero-boxed-btn" target="_blank" id="utility"
+                        style="font-family:headingfont;">Join Public Sale</a></center>
+
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mt-3 ">
+                <div class="col-4 offset-4 d-flex ">
+                    <div class="col-6 " style="border-bottom: 2px solid white; ">
+                    </div>
+                    <div class="col-6 text-start ms-2 ">
+                        <h3 class="mb-0 " style="font-family:headingfont; font-size:20px; color:white;">Utility</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 text-center mt-2 ">
+                <h3 style="font-family:headingfont;font-size:35px; color:white;">The Most Sophisticated Utilities</h3>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+
+            <div class="col-md-1 col-lg-1 col-sm-1"></div>
+            <div class="col-md-5 col-sm-5 col-lg-5">
+                <section>
+                    <center><img src="images/onecat.webp" style="width:300px;height:300px;">
+                        <br>
+                        <br>
+                        <strong style="color:white; font-size:40px; font-family:headingfont;">WITH ONE CAT</strong>
+
+                    </center>
+                    <br>
+                    <br>
+                    <div>
+
+                        <div class="container-fluid box-list box-aliginment" style="line-height:20px">
+                            <div class="row ">
+                                <div class="col-md-2 col-lg-2 musibat">
+                                    <center><img src="images/4.png" style="height:60px; width:60px;"></center>
+                                </div>
+                                <div class="col-md-10 col-lg-10">
+                                    <p style="font-family:headingfont; color:white;font-size:15px;">WELCOME HOME</p>
+                                    <p style="font-family:bodyfont; color:white; font-size:15px;">We will buy lands in
+                                        decentraland and you will have access to our bunker in the
+                                        metaverse to chill with the boys.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row ">
+                                <div class="col-md-2 col-lg-2 musibat">
+                                    <center><img src="images/1.png" style="height:60px; width:60px;"></center>
+                                </div>
+                                <div class="col-md-10 col-lg-10">
+                                    <p style="font-family:headingfont; color:white;font-size:15px;">MAKE THE BEST
+                                        CONNECTS</p>
+                                    <p style="font-family:bodyfont; color:white; font-size:15px;">Access to the best
+                                        exclusive NFT, stock, and crypto community with the most
+                                        recognized experts, investors and traders.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row ">
+                                <div class="col-md-2 col-lg-2 musibat">
+                                    <center><img src="images/2.png" style="height:60px; width:60px;"></center>
+                                </div>
+                                <div class="col-md-10 col-lg-10">
+                                    <p style="font-family:headingfont; color:white;font-size:15px;">BECOME THE SMARTEST
+                                    </p>
+                                    <p style="font-family:bodyfont; color:white; font-size:15px;">Access to the course
+                                        how to trade NFTs like Wall Street, which give information not
+                                        available on the internet/only insiders know.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row ">
+                                <div class="col-md-2 col-lg-2 musibat">
+                                    <center><img src="images/3.png" style="height:60px; width:60px;"></center>
+                                </div>
+                                <div class="col-md-10 col-lg-10">
+                                    <p style="font-family:headingfont; color:white;font-size:15px;">MAKE MORE MONEY</p>
+                                    <p style="font-family:bodyfont; color:white; font-size:15px;">Access to our in-house
+                                        software algorithm that quantifies the potential of each
+                                        collection on a score of 1/3000 from least chance of succeeding to the best.</p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+                    <br>
+                    <center><a href="https://discord.gg/eFE3aEG8V4" class="hero-boxed-btn" target="_blank"
+                            style="font-family:headingfont;">Join Public Sale</a></center>
+                    <br>
+                    <br>
+                    <br>
+
+                </section>
+
+            </div>
+
+            <div class="col-md-5 col-sm-5 col-lg-5">
+                <section>
+                    <center><img src="images/twocat.webp" style="width:300px;height:300px;">
+                        <br>
+                        <br>
+                        <strong style="color:white; font-size:40px; font-family:headingfont;">WITH TWO CATS</strong>
+                    </center>
+
+                    <br>
+                    <br>
+                    <div>
+
+
+                        <div class="container-fluid box-list box-aliginment" style="line-height:20px">
+                            <div class="row ">
+                                <div class="col-md-2 col-lg-2 musibat">
+                                    <center><img src="images/5.png" style="height:60px; width:60px;"></center>
+                                </div>
+                                <div class="col-md-10 col-lg-10">
+                                    <p style="font-family:headingfont; color:white;font-size:15px;">BUY BEFORE ANYONE
+                                        ELSE</p>
+                                    <p style="font-family:bodyfont; color:white; font-size:15px;">Access to our
+                                        proprietary trading bots, never miss another NFT. You can now mint
+                                        any NFT in under 2 seconds.</p>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="row ">
+                                <div class="col-md-2 col-lg-2 musibat">
+                                    <center><img src="images/6.png" style="height:60px; width:60px;"></center>
+                                </div>
+                                <div class="col-md-10 col-lg-10">
+                                    <p style="font-family:headingfont; color:white;font-size:15px;">QUATERLY MASTERMIND
+                                    </p>
+                                    <p style="font-family:bodyfont; color:white; font-size:15px;">Access to our
+                                        quarterly mastermind conference day with the most respected
+                                        experts on the best investment trends for the following quarter in the field of
+                                        stocks,
+                                        entrepreneuship, crypto and NFT.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <center><a href="https://discord.gg/eFE3aEG8V4" class="hero-boxed-btn" id="story" target="_blank"
+                            style="font-family:headingfont;">Join Public Sale</a></center>
+                    <br>
+                    <br>
+                    <br>
+
+                </section>
+
+            </div>
+            <div class="col-md-1 col-lg-1 col-sm-1"></div>
+        </div>
+    </div>
+    <br>
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+
+    <div class="container " style="color:white">
+        <div class="row">
+            <div class="col-12 text-center mt-3 ">
+                <div class="col-4 offset-4 d-flex ">
+                    <div class="col-6 " style="border-bottom: 2px solid white; ">
+                    </div>
+                    <div class="col-6 text-start ms-2 ">
+                        <h3 class="mb-0 " style="font-family:headingfont; font-size:20px">Our Story</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 text-center mt-2 ">
+                <h3 style="font-family:headingfont;font-size:35px">The Billionaire Bunker</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-3 ">
+                <p style="font-family:bodyfont; line-height: 30px;">Once, not so long ago, in their ever expanding
+                    attempt to <b>regulate and control</b> global
+                    currencies, the world’s leading governments combined to form an International
+                    planetary commission. They consolidated all of the world’s hard currencies into one and
+                    <b>set limits on earning, investment, and spending</b>. The idea was to put a stop to the out of
+                    control depletion of natural resources and profiteering.
+                    To manage this new world order, digital scientists developed new infrastructure within
+                    the metasphere, where machine intelligence could be employed to police online and
+                    deep web traffic. After a decade, <b>human activity was normalized into standard routine</b>.
+                    Work, replenish, work. The new global government established a machine code to
+                    provide daily briefings and make decisions regarding best possible outcomes. As a
+                    result, all forms of leisure and entertainment were heavily monitored under the “Get to
+                    Work Act.” Parties were banned. </p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="faq-three">
+                    <!-- faq question -->
+                    <h1 class="read-page" id="roadmap">Read More</h1>
+                    <!-- faq answer -->
+                    <div class="read-body">
+                        <p>
+                            The One World Government <b>quickly banned</b> anything which might create distraction
+                            through emotional attachment. As a result, <b>households were limited to only 1 pet</b>.
+                            Human’s decided to keep only dogs (man’s best friend), sending <b>the world’s cat
+                                population into the streets</b>. New machines were dto take advantage of this
+                            systemesigned to manage the street cats with
+                            sounds and lights.
+                            Some cats learned <b>to take advantage of this system</b>. Pretending to stare off into
+                            empty
+                            space, they carefully studied and learned the language of complex machine beeps and
+                            growls. Able to communicate directly with the machines, <b>these cats began to mine their
+                                own currencies</b>. To evade detection, they created a new in-code geometry, a sort of
+                            cardboard box within the metaverse, where they could hide from detection. As they
+                            became richer and richer, <b>these billionaire cats scaled exponentially</b>, combining more
+                            and more meta-boxes until they had built an entire subnet bunker where they could hide
+                            from the decaying population of the dying world.
+                            <b>The Billionaire Bunker was born, a place where the richest and most powerful cats can
+                                party, free from persecution from the outside world</b>. The drinks here are the best
+                            around. Laced with “hyper nip” - these meta-box cocktails make cats
+                            magnetized
+                            on
+                            staying in the bunker. As a result, the Billionaire Bunker has become a complex multi-
+                            level, multi-layer structure featuring <b>4,444 cats who will never leave.
+                                The humans are beginning to rebel</b>. Some have even discovered how to translate cat
+                            into machine code, unlocking gateways to the bunker. Those clever enough to proceed
+                            can enter by investing in NFTs which <b>will provide access to
+                                advanced trading courses,
+                                insights from leading experts, secrets, and constantly advancing trading tools</b>.
+                            Unlike other “NFT Collections,” the Billionaire Bunker is a space created by cats who
+                            mean business. They beat the system that was holding them down and discovered how
+                            to use machine code to make real currency. <b>The Billionaire Bunker welcomes serious
+                                minded humans in search of long term success</b>. Our mission is to turn investment into
+                            profit.
+                            The Billionaire Bunker represents <b>the next generation of NFT traders</b>. Your entry buys
+                            more than a cute character, you gain access to <b>advanced trading tools not available to
+                                the 1%</b>. As the world’s first NFT hedge fund, we are constantly upgrading,
+                            using machine learning and AI to stay ahead, with new features and tools.
+                            The lines between what is real and what is really going on have always been blurred.
+                            The cats have just made it more interesting. The cats have taught us their secrets, and
+                            now we hold the keys to pass them along to other humans.
+                            Find your cat, get your NFT, enter the Billionaire Bunker, and pull up a chair. <b>The party
+                                is just getting started.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <br>
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+    <br id="content-desktop">
+
+
+    <div class="container " style="color:white">
+        <div class="row">
+            <div class="col-12 text-center mt-3 ">
+                <div class="col-4 offset-4 d-flex ">
+                    <div class="col-6 " style="border-bottom: 2px solid white; ">
+                    </div>
+                    <div class="col-6 text-start ms-2 ">
+                        <h3 class="mb-0 " style="font-family:headingfont;">RoadMap</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 text-center mt-2 ">
+                <h1 style="font-family:headingfont;">The Billionaire Bunker Road Map</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-3 ">
+
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-5 col-sm-5">
+
+
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-left"
+                            data-aos-duration="2000">
+                            <img src="images/map/1.png" width="100%" height="100%">
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-right"
+                            data-aos-duration="2000">
+
+                            <img src="images/map/2.png" width="100%" height="100%">
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+                        <div class="col-md-5 col-lg-5 aos-init" data-aos="fade-up-left" data-aos-duration="2000">
+
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-5 col-sm-5">
+
+
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-left"
+                            data-aos-duration="2000">
+                            <img src="images/map/3.png" width="100%" height="100%">
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-right"
+                            data-aos-duration="2000">
+
+                            <img src="images/map/4.png" width="100%" height="100%">
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-left"
+                            data-aos-duration="2000">
+
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-5 col-sm-5">
+
+
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-left"
+                            data-aos-duration="2000">
+                            <img src="images/map/5.png" width="100%" height="100%">
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-right"
+                            data-aos-duration="2000">
+
+                            <img src="images/map/6.png" width="100%" height="100%">
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-left"
+                            data-aos-duration="2000">
+
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-5 col-sm-5">
+
+
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-left"
+                            data-aos-duration="2000">
+                            <img src="images/map/7.png" width="100%" height="100%">
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-right"
+                            data-aos-duration="2000">
+
+                            <img src="images/map/8.png" width="100%" height="100%">
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-left"
+                            data-aos-duration="2000">
+
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-md-5 col-lg-5 col-sm-5">
+
+
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2"></div>
+                        <div class="col-md-5 col-lg-5 col-sm-5 aos-init" data-aos="fade-up-left"
+                            data-aos-duration="2000">
+                            <img src="images/map/9.png" width="100%" height="100%">
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--<div class="container " style="color:white" data-aos="zoom-in">-->
+    <!--    <div class="row">-->
+    <!--              <div class="col-12 text-center mt-3 ">-->
+    <!--            <div class="col-4 offset-4 d-flex ">-->
+    <!--                <div class="col-6 " style="border-bottom: 2px solid white; ">-->
+    <!--                </div>-->
+    <!--                <div class="col-6 text-start ms-2 ">-->
+    <!--                    <h3 class="mb-0 " style="font-family:headingfont;">RoadMap</h3>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+    <!--        </div>-->
+    <!--        <div class="col-12 text-center mt-2 ">-->
+    <!--            <h1 style="font-family:headingfont;">The Billionaire Bunker Road Map</h1>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="row">-->
+    <!--        <div class="col-12 text-center mt-3 ">-->
+
+    <!--              <center>-->
+    <!--            <img src="images/map2.png " alt=" " class="img-fluid ">-->
+    <!--            </center>-->
+
+
+    <!--        </div>-->
+
+    <!--    </div>-->
+    <!--</div>-->
+
+    <br>
+    <br>
+
+    <!--<div class="container " style="color:white" data-aos="zoom-in">-->
+    <!--    <div class="row">-->
+    <!--              <div class="col-12 text-center mt-3 ">-->
+    <!--            <div class="col-4 offset-4 d-flex ">-->
+    <!--                <div class="col-6 " style="border-bottom: 2px solid white; ">-->
+    <!--                </div>-->
+    <!--                <div class="col-6 text-start ms-2 ">-->
+    <!--                    <h3 class="mb-0 " style="font-family:headingfont;">RoadMap</h3>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+    <!--        </div>-->
+    <!--        <div class="col-12 text-center mt-2 ">-->
+    <!--            <h1 style="font-family:headingfont;">The Billionaire Bunker Road Map</h1>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="row">-->
+    <!--        <div class="col-12 text-center mt-3 ">-->
+
+    <!--              <center>-->
+    <!--            <img src="images/map.png " alt=" " class="img-fluid ">-->
+    <!--            </center>-->
+
+
+    <!--        </div>-->
+
+    <!--    </div>-->
+    <!--</div>-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-lg-1"></div>
+            <div class="col-md-10 col-sm-6 col-lg-10">
+                <section>
+
+                    <center><a href="https://discord.gg/eFE3aEG8V4" class="hero-boxed-btn" id="team" target="_blank"
+                            style="font-family:headingfont;">Join Public Sale</a></center>
+
+                </section>
+
+            </div>
+            <div class="col-md-1 col-lg-1"></div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12 col-lg-12 text-center">
+                <h1 style="color:white; font-family:headingfont;">Our Team</h1>
+                <p style="font-size: 20px; color:white ;font-family:headingfont;">Meet the entire team</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row aos-init aos-animate" data-aos="fade-up-right" data-aos-duration="2000" id="content-mobile">
+            <div class="col-md-1 col-lg-1 col-sm-1"></div>
+            <div class="col-md-3 col-lg-3 col-sm-3 rola">
+
+                <div class="single-team-member new-rola">
+
+                    <div class="team-img-wrapper">
+
+                        <img class="img-fluid lazy try" src="images/Picture/3.1.jpg" alt="Team Photo" style="">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">Home Run</h5>
+                        <p style="color:white">Ex 5-star stockbroker. He works minimum 60 hours a week. He’s very good
+                            at
+                            taking the right decisions at the right time. A chill dude.
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+                        <small>CEO and Investor</small>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-1 col-lg-1 col-sm-1"></div>
+            <div class="col-md-3 col-lg-3 col-sm-3 rola">
+                <div class="single-team-member new-rola">
+
+                    <div class="team-img-wrapper">
+
+                        <img class="img-fluid lazy try" src="images/Picture/3.2.jpg" alt="Team Photo">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">Renzo</h5>
+                        <p style="color:white">He wasn't born to fit in, he was born to stand out with creative
+                            decisions made
+                            with fear with a goal to reinvent himself and unite others into his imagination.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+
+
+                        <small>Creative Director &amp; Artist</small>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-1 col-lg-1 col-sm-1"></div>
+            <div class="col-md-3 col-lg-3 col-sm-3 rola">
+                <div class="single-team-member new-rola">
+
+                    <div class="team-img-wrapper">
+
+                        <img class="img-fluid lazy try" src="images/3rdd.jpg" alt="Team Photo">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">Ligerio</h5>
+                        <p style="color:white">After a decade of marketing and sales optimisation for international
+                            brands. I decided to look inward the future of collectable and digital art to create
+                            everlasting storytelling brand that speaks the language of the future.</p>
+                        <br>
+                        <small>Marketing And Implementation</small>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="row aos-init" data-aos="fade-up-right" data-aos-duration="2000" id="content-desktop"
+            style="margin-left:45px!important">
+            <div class="col-md-4 col-lg-4">
+                <div class="single-team-member new-rola img3">
+
+                    <div class="team-img-wrapper img3">
+
+                        <img class="img-fluid lazy" src="images/Picture/3.1.jpg" alt="Team Photo"
+                            style="width:100%;height:270px;">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">Home Run</h5>
+                        <p style="color:white">Ex 5-star stockbroker. He works minimum 60 hours a week. He’s very good
+                            at
+                            taking the right decisions at the right time. A chill dude.
+                        </p>
+                        <br>
+                        <br>
+
+
+                        <small>CEO and Investor</small>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="single-team-member new-rola img3">
+
+                    <div class="team-img-wrapper img3">
+
+                        <img class="img-fluid lazy" src="images/Picture/3.2.jpg" alt="Team Photo"
+                            style="width:100%;height:270px;">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">Renzo</h5>
+                        <p style="color:white">He wasn't born to fit in, he was born to stand out with creative
+                            decisions made
+                            with fear with a goal to reinvent himself and unite others into his imagination.</p>
+                        <br>
+                        <br>
+
+
+                        <small>Creative Director &amp; Artist</small>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <div class="single-team-member new-rola img3">
+
+                    <div class="team-img-wrapper img3">
+
+                        <img class="img-fluid lazy" src="images/3rdd.jpg" alt="Team Photo"
+                            style="width:100%;height:270px;">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">Ligero</h5>
+                        <p style="color:white">After a decade of marketing and sales optimisation for international
+                            brands. I decided to look inward the future of collectable and digital art to create
+                            everlasting storytelling brand that speaks the language of the future.</p>
+                        <small>Marketing And Implementation</small>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+
+
+        <div class="row aos-init" data-aos="fade-up-left" data-aos-duration="2000">
+            <div class="col-md-3 col-lg-3">
+                <div class="single-team-member ">
+
+                    <div class="team-img-wrapper">
+
+                        <img class="img-fluid lazy try" src="images/Picture/4.1.PNG" alt="Team Photo">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">Fuego</h5>
+
+                        <small>Developer</small>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <div class="single-team-member ">
+
+                    <div class="team-img-wrapper">
+
+                        <img class="img-fluid lazy try" src="images/Picture/4.2.jpg" alt="Team Photo">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">BB</h5>
+
+                        <small>Consultant</small>
+                        <br>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-lg-3">
+                <div class="single-team-member ">
+
+                    <div class="team-img-wrapper">
+
+                        <img class="img-fluid lazy try" src="images/Picture/4.3.jpg" alt="Team Photo">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">StickerOnGlass</h5>
+
+                        <small>Strategy</small>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-lg-3">
+                <div class="single-team-member ">
+
+                    <div class="team-img-wrapper">
+
+                        <img class="img-fluid lazy try" src="images/Picture/4.4.jpg" alt="Team Photo">
+
+
+
+                    </div>
+                    <div class="member-info">
+
+                        <h5 class="member-name" style="font-family:headingfont;">AK47</h5>
+
+                        <small id="faq">Illustrator</small>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <br>
+        <br>
+
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <main>
+                    <center>
+                        <h1 class="faq-heading" style="font-family:headingfont;">FAQ'S</h1>
+                    </center>
+                    <section class="faq-container-fluid">
+                        <div class="faq-one">
+                            <!-- faq question -->
+                            <h1 class="faq-page">What is the Billionaire Bunker?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>TThe Billionaire Bunker is an NFT collection composed of 4444 big cats. The
+                                    bunker represents the next generation of traders. Please refer to the utility
+                                    section on our website for a complete breakdown of all the perks that you
+                                    receive with the bunker.Join our discord by clicking on the following link:
+                                    https://discord.gg/eFE3aEG8V4</p>
+                            </div>
+                        </div>
+                        <hr class="hr-line">
+                        <div class="faq-two">
+                            <!-- faq question -->
+                            <h1 class="faq-page">When is the minting day?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>The presale is on January 6th and the public sale is on January 11th.</p>
+                            </div>
+                        </div>
+                        <hr class="hr-line">
+                        <div class="faq-three">
+                            <!-- faq question -->
+                            <h1 class="faq-page">What is the price?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>The price is 0.088 ETH + gas per NFT</p>
+                            </div>
+                        </div>
+                        <hr class="hr-line">
+                        <div class="faq-three">
+                            <!-- faq question -->
+                            <h1 class="faq-page">Where will the minting take place?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>We will send the link on discord/twitter/instagram at the launch date. It will
+                                    be on the ETH network and our collection will be listed on opensea after.</p>
+                            </div>
+                        </div>
+                        <hr class="hr-line">
+                        <div class="faq-three">
+                            <!-- faq question -->
+                            <h1 class="faq-page">Is there a whitelist?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>We are going to have 2000 spots available. This information may change so please
+                                    consult the discord if you are in doubt.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="hr-line">
+                        <div class="faq-three">
+                            <!-- faq question -->
+                            <h1 class="faq-page">It's my first time buying an NFT, how do I do that?</h1>
+                            <!-- faq answer -->
+                            <div class="faq-body">
+                                <p>Please refer to this video: https://www.youtube.com/watch?
+                                    v=eYpz34noK6Y&amp;ab_channel=Rhett%2FMankind
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <div class="conatiner">
+        <!--<div class="row">-->
+        <!--    <div class="col-md-1 col-lg-1">-->
+
+        <!--    </div>-->
+        <!--    <br>-->
+        <!--    <br>-->
+        <!--    <div class="col-md-11 col-lg-11" style="color:white;">-->
+        <!--        <span class="footer-font " style="margin-left:20px">Contant Us</span>-->
+        <!--            <span class="footer-font " style="margin-left:20px">Road Map</span>-->
+        <!--            <span class="footer-font " style="margin-left:20px">Team</span>-->
+        <!--            <span class="footer-font " style="margin-left:20px">FAQs</span>-->
+
+
+        <!--            <div class="row" style="margin-top:10px">-->
+        <!--                <div class="col-md-12 col-lg-12">-->
+        <!--                     <span class="social" style="margin-left:20px"><img src="images/insta.svg " alt=" "></span>-->
+        <!--            <span class="social" style="margin-left:20px"><img src="images/facebook.svg " alt=" "></span>-->
+        <!--            <span class="social" style="margin-left:20px"><img src="images/link.svg " alt=" "></span>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--    </div>-->
+        <!--</div>-->
+
+    </div>
+
+    <hr>
+
+    <div class="row m-0 mt-3 ">
+        <div class="col-11 offset-1 d-flex ">
+            <div class="col-4 footer-font ">
+                <span class="social nomal">
+                    The Billionaire Bunker
+                </span>
+            </div>
+            <div class="col-4 offset-4 footer-font ">
+                <span class="social nomal">
+                    <i class="fa fa-copyright " aria-hidden="true "></i> RISS All copyrights reserved
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div>
+        <!-- Well begun is half done. - Aristotle -->
+
+
+
+    </div>
+
+    <div>
+        <!-- I begin to speak only when I am certain what I will say is not better left unsaid - Cato the Younger -->
+    </div>
+
+    <div>
+        <!-- It is not the man who has too little, but the man who craves more, that is poor. - Seneca -->
+
+
+
+
+
+
+
+        <script>
+            var faq = document.getElementsByClassName("faq-page");
+            var i;
+            for (i = 0; i < faq.length; i++) {
+                faq[i].addEventListener("click", function () {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+                    /* Toggle between hiding and showing the active panel */
+                    var body = this.nextElementSibling;
+                    if (body.style.display === "block") {
+                        body.style.display = "none";
+                    } else {
+                        body.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        <script>
+            var faq = document.getElementsByClassName("read-page");
+            var i;
+            for (i = 0; i < faq.length; i++) {
+                faq[i].addEventListener("click", function () {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+                    /* Toggle between hiding and showing the active panel */
+                    var body = this.nextElementSibling;
+                    if (body.style.display === "block") {
+                        body.style.display = "none";
+                    } else {
+                        body.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            /*! Elastic Slider (c) 2014 // Taron Mehrabyan // Ruben Sargsyan
+             */
+
+            window.addEventListener('load', onWndLoad, false);
+
+            function onWndLoad() {
+
+                var slider = document.querySelector('.slider');
+                var sliders = slider.children;
+
+
+
+
+                var initX = null;
+                var transX = 0;
+                var rotZ = 0;
+                var transY = 0;
+
+                var curSlide = null;
+
+                var Z_DIS = 50;
+                var Y_DIS = 10;
+                var TRANS_DUR = 0.4;
+
+                var images = document.querySelectorAll('img');
+                for (var i = 0; i < images.length; i++) {
+                    images[i].onmousemove = function (e) {
+                        e.preventDefault()
+
+                    }
+                    images[i].ondragstart = function (e) {
+                        return false;
+
+                    }
+                }
+
+                function init() {
+
+                    var z = 0,
+                        y = 0;
+
+                    for (var i = sliders.length - 1; i >= 0; i--) {
+                        sliders[i].style.transform = 'translateZ(' + z + 'px) translateY(' + y + 'px)';
+
+                        z -= Z_DIS;
+                        y += Y_DIS;
+                    }
+
+
+                    attachEvents(sliders[sliders.length - 1]);
+
+
+
+                }
+
+                function attachEvents(elem) {
+                    curSlide = elem;
+
+                    curSlide.addEventListener('mousedown', slideMouseDown, false);
+                    curSlide.addEventListener('touchstart', slideMouseDown, false);
+                }
+                init();
+
+                function slideMouseDown(e) {
+
+                    if (e.touches) {
+                        initX = e.touches[0].clientX;
+                    } else {
+                        initX = e.pageX;
+                    }
+
+
+                    document.addEventListener('mousemove', slideMouseMove, false);
+                    document.addEventListener('touchmove', slideMouseMove, false);
+
+                    document.addEventListener('mouseup', slideMouseUp, false);
+                    document.addEventListener('touchend', slideMouseUp, false);
+                }
+                var prevSlide = null;
+
+                function slideMouseMove(e) {
+                    var mouseX;
+
+                    if (e.touches) {
+                        mouseX = e.touches[0].clientX;
+                    } else {
+                        mouseX = e.pageX;
+                    }
+
+                    transX += mouseX - initX;
+                    rotZ = transX / 20;
+
+                    transY = -Math.abs(transX / 15);
+
+
+
+                    curSlide.style.transition = 'none';
+                    curSlide.style.webkitTransform = 'translateX(' + transX + 'px)' + ' rotateZ(' + rotZ + 'deg)' +
+                        ' translateY(' + transY + 'px)';
+                    curSlide.style.transform = 'translateX(' + transX + 'px)' + ' rotateZ(' + rotZ + 'deg)' +
+                        ' translateY(' + transY + 'px)';
+                    var j = 1;
+                    //remains elements
+                    for (var i = sliders.length - 2; i >= 0; i--) {
+
+                        sliders[i].style.webkitTransform = 'translateX(' + transX / (2 * j) + 'px)' + ' rotateZ(' +
+                            rotZ / (2 * j) + 'deg)' + ' translateY(' + (Y_DIS * j) + 'px)' + ' translateZ(' + (-Z_DIS *
+                                j) + 'px)';
+                        sliders[i].style.transform = 'translateX(' + transX / (2 * j) + 'px)' + ' rotateZ(' + rotZ / (
+                                2 * j) + 'deg)' + ' translateY(' + (Y_DIS * j) + 'px)' + ' translateZ(' + (-Z_DIS * j) +
+                            'px)';
+                        sliders[i].style.transition = 'none';
+                        j++;
+                    }
+
+
+
+                    initX = mouseX;
+                    e.preventDefault();
+                    if (Math.abs(transX) >= curSlide.offsetWidth - 30) {
+
+                        document.removeEventListener('mousemove', slideMouseMove, false);
+                        document.removeEventListener('touchmove', slideMouseMove, false);
+                        curSlide.style.transition = 'ease 0.2s';
+                        curSlide.style.opacity = 0;
+                        prevSlide = curSlide;
+                        attachEvents(sliders[sliders.length - 2]);
+                        slideMouseUp();
+                        setTimeout(function () {
+
+
+
+
+
+                            slider.insertBefore(prevSlide, slider.firstChild);
+
+                            prevSlide.style.transition = 'none';
+                            prevSlide.style.opacity = '1';
+                            slideMouseUp();
+
+                        }, 201);
+
+
+
+                        return;
+                    }
+                }
+
+                function slideMouseUp() {
+                    transX = 0;
+                    rotZ = 0;
+                    transY = 0;
+
+                    curSlide.style.transition = 'cubic-bezier(0,1.95,.49,.73) ' + TRANS_DUR + 's';
+
+                    curSlide.style.webkitTransform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' +
+                        ' translateY(' + transY + 'px)';
+                    curSlide.style.transform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' +
+                        ' translateY(' + transY + 'px)';
+                    //remains elements
+                    var j = 1;
+                    for (var i = sliders.length - 2; i >= 0; i--) {
+                        sliders[i].style.transition = 'cubic-bezier(0,1.95,.49,.73) ' + TRANS_DUR / (j + 0.9) + 's';
+                        sliders[i].style.webkitTransform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' +
+                            ' translateY(' + (Y_DIS * j) + 'px)' + ' translateZ(' + (-Z_DIS * j) + 'px)';
+                        sliders[i].style.transform = 'translateX(' + transX + 'px)' + 'rotateZ(' + rotZ + 'deg)' +
+                            ' translateY(' + (Y_DIS * j) + 'px)' + ' translateZ(' + (-Z_DIS * j) + 'px)';
+
+                        j++;
+                    }
+
+                    document.removeEventListener('mousemove', slideMouseMove, false);
+                    document.removeEventListener('touchmove', slideMouseMove, false);
+
+                }
+
+
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+        <script type="text/javascript">
+            window.laravelCookieConsent = (function () {
+
+                const COOKIE_VALUE = 1;
+                const COOKIE_DOMAIN = 'thebillionairebunker.io';
+
+                function consentWithCookies() {
+                    setCookie('laravel_cookie_consent', COOKIE_VALUE, 7300);
+                    hideCookieDialog();
+                }
+
+                function cookieExists(name) {
+                    return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+                }
+
+                function hideCookieDialog() {
+                    const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                    for (let i = 0; i < dialogs.length; ++i) {
+                        dialogs[i].style.display = 'none';
+                    }
+                }
+
+                function setCookie(name, value, expirationInDays) {
+                    const date = new Date();
+                    date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                    document.cookie = name + '=' + value +
+                        ';expires=' + date.toUTCString() +
+                        ';domain=' + COOKIE_DOMAIN +
+                        ';path=/';
+                }
+
+                if (cookieExists('laravel_cookie_consent')) {
+                    hideCookieDialog();
+                }
+
+                const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+                for (let i = 0; i < buttons.length; ++i) {
+                    buttons[i].addEventListener('click', consentWithCookies);
+                }
+
+                return {
+                    consentWithCookies: consentWithCookies,
+                    hideCookieDialog: hideCookieDialog
+                };
+            })();
+        </script>
+        <script type="text/javascript">
+            var lat = 51.507351;
+            var lng = -0.127758;
+            var mainbs = {
+                "is_announcement": "0",
+                "announcement_delay": "2.00"
+            };
+
+            var rtl = 0;
+        </script>
+        <script src="assets/front/js/script515251525152.js?ver=1.0" type="text/javascript" defer=""></script>
+
+        <script src="assets/front/js/popper.min.js" type="text/javascript" defer=""></script>
+
+        <script src="assets/front/js/bootstrap.min.js" type="text/javascript" defer=""></script>
+
+        <script src="assets/front/js/plugin.min.js" type="text/javascript" defer=""></script>
+
+        <script src="assets/front/js/main.js" type="text/javascript" defer=""></script>
+
+
+
+        <script src="cdn.jsdelivr.net/npm/sweetalert2%4010.10.1/dist/sweetalert2.all.min.js" defer=""></script>
+
+        <script src="unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js" defer=""></script>
+
+
+
+
+
+
+
+
+
+        <script>
+            'undefined' === typeof _trfq || (window._trfq = []);
+            'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({
+                'tccl.baseHost': 'secureserver.net'
+            }), _trfd.push({
+                'ap': 'cpsh-oh'
+            }, {
+                'server': 'sg2plzcpnl487139'
+            }, {
+                'id': '8282607'
+            }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+        </script>
+        <script src="img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js"></script>
+
+
+
+
+
+
+
+    </div>
+    <div id="save-code-popup-parent"></div>
+    <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
+    <div id="lightbox" class="lightbox" style="display: none;">
+        <div class="lb-outerContainer">
+            <div class="lb-container"><img class="lb-image"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                <div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div>
+                <div class="lb-loader"><a class="lb-cancel"></a></div>
+            </div>
+        </div>
+        <div class="lb-dataContainer">
+            <div class="lb-data">
+                <div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div>
+                <div class="lb-closeContainer"><a class="lb-close"></a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
